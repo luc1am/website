@@ -1,0 +1,163 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap:10px;
+
+}
+
+.leftmenu{
+    grid-column: 1;
+    
+}
+.main{
+    padding: 20px;
+    grid-column:2;    
+}
+header{
+    position: relative;
+    font-family: roc-grotesk, sans-serif;
+    font-size: 80px;
+    color: rgb(112,112,112);
+    
+    padding: 10px;
+    z-index: 2;
+    
+    
+} 
+
+#overlay{
+    position: absolute;
+    top: 100px;
+}
+
+h1{
+    position: relative;
+    font-family: roc-grotesk, sans-serif;
+    font-size: 20px;
+    
+    color: rgb(139, 50, 168);
+    
+    padding: 5px;
+    font-weight: normal;
+    z-index: 0;
+}
+
+h2{
+    position: relative;
+    font-family: roc-grotesk, sans-serif;
+    font-style:italic;
+    font-size: 20px;
+    color: rgb(139, 50, 168);
+    padding: 5px;
+    font-weight: normal;
+}
+p{
+    position: relative;
+    font-family: kandal;
+    font-size: 20px;
+    color: rgb(139, 50, 168);
+    padding: 5px;
+    font-weight: normal;
+}
+
+#bg-img{
+    position:absolute;
+    z-index: 1;
+}
+#sketch {
+   position: absolute;
+    top: 0;
+    z-index: 0;
+    mix-blend-mode: normal;
+    /* background-color: rgb(131,10,71); */
+}
+/* #sketch {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    mix-blend-mode: normal;
+    
+} */
+
+/* https://www.w3schools.com/css/css_link.asp */
+a{
+    color: rgb(139, 50, 168);
+    text-decoration: none;
+}
+
+a:hover{
+    /* color: rgb(217, 255, 0); */
+    color: rgb(22, 222, 16);
+}
+#gallery{
+    line-height:0;
+   -webkit-column-count:3; /* split it into 5 columns */
+   -webkit-column-gap:5px; /* give it a 5px gap between columns */
+   -moz-column-count:3;
+   -moz-column-gap:5px;
+   column-count:3;
+   column-gap:5px;
+}
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
+
+/* @media (min-width: 960px){
+
+} */
+/* a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active -a link the moment it is clicked */
+
+/* svg{
+    mix-blend-mode: screen;
+} */
+  
+.column{
+    display:flex;
+    padding: 10px;
+    width: 75vw;
+    gap: 25px;
+
+}
+.right{
+    width: 25vw;
+    
+
+}
+.img-me{
+    width: 25vw;
+    height: 25vw;
+
+}
+
+.left{
+    padding: 50px;
+    width: 50vw;
+   
+}
+
+.main p{
+    
+}
+
+
+/* rgb(131, 10,71); */
+/* .normal {mix-blend-mode: normal;}
+.multiply {mix-blend-mode: multiply;}
+.screen {mix-blend-mode: screen;}
+.overlay {mix-blend-mode: overlay;}
+.darken {mix-blend-mode: darken;}
+.lighten {mix-blend-mode: lighten;}
+.color-dodge {mix-blend-mode: color-dodge;}
+.color-burn {mix-blend-mode: color-burn;}
+.difference {mix-blend-mode: difference;}
+.exclusion {mix-blend-mode: exclusion;}
+.hue {mix-blend-mode: hue;}
+.saturation {mix-blend-mode: saturation;}
+.color {mix-blend-mode: color;}
+.luminosity {mix-blend-mode: luminosity;} */
