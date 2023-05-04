@@ -34,7 +34,6 @@ h1{
     position: relative;
     font-family: roc-grotesk, sans-serif;
     font-size: 20px;
-    
     color: rgb(139, 50, 168);
     
     padding: 5px;
@@ -53,11 +52,15 @@ h2{
 }
 p{
     position: relative;
-    font-family: kandal;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 420;
+    letter-spacing: 1px;
     font-size: 20px;
     color: rgb(139, 50, 168);
-    padding: 5px;
-    font-weight: normal;
+    padding: 15px;
+    
+    width: 75vw;
+    
 }
 
 #bg-img{
@@ -81,10 +84,19 @@ p{
 } */
 
 /* https://www.w3schools.com/css/css_link.asp */
-a{
+h1 a{
     color: rgb(139, 50, 168);
     text-decoration: none;
 }
+header a{
+    color: rgb(139, 50, 168);
+    text-decoration: none;
+}
+.main a{
+    font-family: roc-grotesk, sans-serif;
+    font-size: 20px;
+}
+
 
 a:hover{
     /* color: rgb(217, 255, 0); */
@@ -116,7 +128,15 @@ a:active -a link the moment it is clicked */
 /* svg{
     mix-blend-mode: screen;
 } */
-  
+
+@media screen and (min-width: 900px){
+    
+    .cap{
+        width: 800px;
+    }
+}
+
+
 .column{
     display:flex;
     padding: 10px;
@@ -141,8 +161,36 @@ a:active -a link the moment it is clicked */
    
 }
 
-.main p{
-    
+#overlay img{
+    position: absolute;
+    transition: transform .7s ease-in-out;
+
+}
+#overlay img:hover{
+    position: absolute;
+    transform: rotate(5deg);
+
+}
+#one{
+    top: 10vh;
+    left:-5vw;
+}
+#two{
+    left: 25vw;
+    top: -5vh
+
+}
+#three{
+    top:60vh;
+    left: 10vw;
+}
+#four{
+    top: 49vh;
+    left: 56vw;
+}
+#five{
+    top: 10vh;
+    left: 48vw;
 }
 
 

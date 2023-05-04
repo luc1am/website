@@ -19,6 +19,9 @@ let nInt = .01; // noise intensity
 let nAmp = 0.5; // noise amplitude
 
 let filled = false;
+let text_x; 
+let text_y; 
+
 
 
 function setup() {
@@ -62,16 +65,19 @@ function draw() {
     pop();
     fill(139, 50, 168);
     textSize(50);
-    textFont("kandal");
+    textFont("forma-djr-display");
     strokeWeight(200)
     textAlign(CENTER);
     //rectMode(CENTER);
+    text_x = 50;
+    text_y = (height/2)-50;
     
-    text("Hi, I'm Lucia.\n I'm an artist and fabricator.\n Thank you for visiting my website!",
-     (50), height/3, width-100, height);
+    text("Hi, I'm Lucia.",text_x, text_y, width-100, height);
 }
 
 function windowResized(){
   resizeCanvas((0.75*windowWidth), 0.75*windowHeight);
+  text_x = 50;
+  text_y = (height/2)-50;
 }
 
